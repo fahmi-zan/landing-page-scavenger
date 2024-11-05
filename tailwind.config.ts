@@ -1,13 +1,12 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from "tailwindcss";
-import typography from "@tailwindcss/typography";
-import daisyui from "daisyui";
 
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -17,7 +16,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [typography, daisyui],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
     base: true,
     styled: true,
