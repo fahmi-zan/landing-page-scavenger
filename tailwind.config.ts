@@ -28,6 +28,7 @@ const config: Config = {
         mytheme: {
           primary: "var(--primary-color)",
           secondary: "var(--secondary-color)",
+          "yellow-stabilo": "#E9FF00",
           "base-100": "var(--base-color)",
         },
       },

@@ -19,11 +19,21 @@ export default function Footer() {
         <nav className="bg-transparent">
           <h6 className="footer-title">Resources and Support</h6>
           <a className="link link-hover">Pricing</a>
-          <a className="link link-hover">FAQ</a>
-          <a className="link link-hover">Help Center</a>
-          <a className="link link-hover">Privacy Policy</a>
-          <a className="link link-hover">Terms and Conditions</a>
-          <a className="link link-hover">End User License Agreement</a>
+          <a href="./faq" className="link link-hover">
+            FAQ
+          </a>
+          <a href="./help-center" className="link link-hover">
+            Help Center
+          </a>
+          <a href="./privacy-and-policy" className="link link-hover">
+            Privacy Policy
+          </a>
+          <a href="./terms-and-conditions" className="link link-hover">
+            Terms and Conditions
+          </a>
+          <a href="./end-user-license-agreement" className="link link-hover">
+            End User License Agreement
+          </a>
         </nav>
         <nav className="bg-transparent ">
           <Image src={HoopleWhite} width={200} alt="logo-hoople" />
