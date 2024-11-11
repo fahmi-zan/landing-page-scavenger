@@ -23,15 +23,20 @@ const config: Config = {
     utils: true,
     logs: true,
     themeRoot: ":root",
-    theme: [
+    themes: [
       {
         mytheme: {
-          primary: "var(--primary-color)",
-          secondary: "var(--secondary-color)",
+          primary: "#8d51dd",
+          secondary: "#bea2fc",
+          accent: "#ff9e2c",
           "yellow-stabilo": "#E9FF00",
-          "base-100": "var(--base-color)",
+          neutral: "#cbcad0",
+          "base-100": "#f7f5f8",
+          "base-content": "#1f2143",
         },
       },
+      "light",
+      "acid",
     ],
   },
 };

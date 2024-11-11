@@ -6,11 +6,13 @@
   /* Color */
   --primary-color: #8d51dd;
   --secondary-color: #bea2fc;
+  --accent-color: #ff9e2c;
   --navy-color: #1f2143;
   --yellow-stabilo-color: #e9ff00;
-  --base-color: #6a6bd0;
+  --base-color: #f7f5f8;
   --background: #ffffff;
   --foreground: #171717;
+  --text-color: #1e1e1e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,19 +23,29 @@
 }
 
 *,
-h1,
-h2,
-h3,
-h4,
 span,
 body {
   padding: 0px;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .legal {
+    width: calc(100% - 50px);
+    height: 100%;
+    margin: 0px auto;
+    padding: 100px 0px 30px;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 18px;
+    font-family: "Courier New", monospace;
   }
 }

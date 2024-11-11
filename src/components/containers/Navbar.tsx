@@ -39,7 +39,7 @@ const MenuItem: MenuItemProps[] = [
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100 text-[var(--yellow-stabilo-color)]">
+    <div className="navbar bg-base-content glass text-[var(--yellow-stabilo-color)] absolute top-0 right-0">
       {/* Mobile view */}
       <div className="navbar-start items-center gap-3">
         <div className="dropdown">
