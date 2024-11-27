@@ -3,7 +3,7 @@ import React from "react";
 import AppsStore from "@/assets/png/appstore.png";
 import PlayStore from "@/assets/png/googleplay.png";
 import Link from "next/link";
-import HoopleWhite from "@/assets/png/hoople-white.png";
+import HoopleWhite from "@/assets/svg/hoople-white.svg";
 
 export default function Footer() {
   return (
@@ -41,10 +41,11 @@ export default function Footer() {
             International Financial Center 2 Jakarta, Indonesia
           </p>
           <div className="flex flex-col gap-7 mt-6">
-            <Link href={"##"} target="_blank">
+            <Link prefetch={true} href={"##"} target="_blank">
               <Image src={AppsStore} alt="app-store" width={200} />
             </Link>
             <Link
+              prefetch={true}
               href={
                 "https://play.google.com/store/apps/details?id=com.optimind.hoople&pcampaignid=web_share"
               }

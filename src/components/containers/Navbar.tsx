@@ -39,7 +39,7 @@ const MenuItem: MenuItemProps[] = [
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-content glass text-[var(--yellow-stabilo-color)] absolute top-0 right-0">
+    <div className="navbar bg-transparent text-[var(--yellow-stabilo-color)] absolute top-0 right-0">
       {/* Mobile view */}
       <div className="navbar-start items-center gap-3">
         <div className="dropdown">
@@ -87,10 +87,10 @@ export default function Navbar() {
 
       {/* Desktop view */}
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-balance font-semibold">
           {MenuItem.map((item) => (
             <li key={item.key}>
-              <a href="#">{item.title}</a>
+              <a href={item.path}>{item.title}</a>
             </li>
           ))}
         </ul>

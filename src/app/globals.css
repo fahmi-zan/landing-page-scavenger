@@ -9,6 +9,7 @@
   --accent-color: #ff9e2c;
   --navy-color: #1f2143;
   --yellow-stabilo-color: #e9ff00;
+  --green-stabilo-color: #a6de07;
   --base-color: #f7f5f8;
   --background: #ffffff;
   --foreground: #171717;
@@ -47,5 +48,50 @@ body {
     color: var(--text-color);
     font-size: 18px;
     font-family: "Courier New", monospace;
+  }
+
+  .heading-1 {
+    font-size: clamp(1em, 4vw, 2em);
+    font-weight: 400;
+    text-wrap: pretty;
+  }
+
+  .spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .layer-1 {
+    background-image: url("/src/assets/svg/wave.svg");
+  }
+
+  .layer-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .layer-wave svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 160px;
+  }
+
+  .layer-wave .shape-fill {
+    fill: var(--base-color);
+  }
+
+  .parent-wave {
+    background-color: var(--secondary-color);
+    background: url("/src/assets/png/compount-path.png");
+    background-repeat: no-repeat;
   }
 }

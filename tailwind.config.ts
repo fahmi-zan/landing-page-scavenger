@@ -10,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "half-mobile": "url('/src/assets/png/half-mobile.png')",
+        "wave-path": "url('/src/assets/png/compount-path.png)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
