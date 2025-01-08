@@ -1,17 +1,16 @@
+import AI from "@/assets/png/ai.png";
 import AppsStore from "@/assets/png/appstore.png";
+import Calender from "@/assets/png/calender.png";
+import EasyUse from "@/assets/png/easy-use.png";
+import Event from "@/assets/png/event.png";
+import FreeTrial from "@/assets/png/free-trial.png";
 import PlayStore from "@/assets/png/googleplay.png";
+import Platform from "@/assets/png/platform.png";
+import PointLeader from "@/assets/png/point-leader.png";
+import Translate from "@/assets/png/translate.png";
 import HalfMobile from "@/assets/svg/half-mobile.svg";
 import Image from "next/image";
 import Link from "next/link";
-import FreeTrial from "@/assets/png/free-trial.png";
-import AI from "@/assets/png/ai.png";
-import Calender from "@/assets/png/calender.png";
-import Event from "@/assets/png/event.png";
-import EasyUse from "@/assets/png/easy-use.png";
-import Translate from "@/assets/png/translate.png";
-import Platform from "@/assets/png/platform.png";
-import PointLeader from "@/assets/png/point-leader.png";
-import BgPath from "@/assets/png/compount-path.png";
 
 const PRODUCT_SUPERIOR = [
   { label: "Coba Gratis", icon: FreeTrial },
@@ -194,7 +193,7 @@ export default function Home() {
       {/* --- */}
 
       {/* Visi & Misi */}
-      <section className="w-full min-h-dvh bg-secondary bg-wave-path flex items-center justify-evenly relative">
+      <section className="w-full min-h-dvh bg-secondary bg-wave-path bg-blend-soft-light bg-no-repeat bg-cover bg-center flex items-center justify-evenly relative">
         <div className="layer-wave">
           <svg
             data-name="Layer 1"
